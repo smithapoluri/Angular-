@@ -6,4 +6,11 @@ import { Component } from "@angular/core";
 })
 export class ServerComponent{
 
+    serverId: number = 10;
+    serverName:string ="server"+this.serverId;
+        allowServer = false;
+
+public name():string {
+    return this.serverName;
+}
 }

@@ -1,0 +1,47 @@
+
+<hr>
+<div class="container">
+  <div class="media">
+      <img class="align-self-start mr-3" src="./assets/databinding.png" alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="mt-0">Data-binding</h5>
+        <ol>
+            <li>String Interpolation displays the component's hero.name property value within the element.<br>
+              <pre>
+              usage ='{{ string }\}' <br>
+              {{username}\}
+              </pre>
+            
+            </li>
+            <li>Property binding passes the value of selected string from the parent component to the property of the child component.<br>
+               <pre>
+                usage= [string] <br>
+                button class="btn btn-default" (click)=onPress() [disabled]="notEmpty()"
+              </pre>
+            </li>
+            <li>You can use Angular event bindings to respond to any DOM event. Many DOM events are triggered by user input. 
+              Binding to these events provides a way to get input from the user.
+              To bind to a DOM event, surround the DOM event name in parentheses and assign a quoted template statement to it.
+              The following example shows an event binding that implements a click handler:
+              <pre>
+               button (click)="onClickMe()">Click me!<br>
+                The (click) event binding calls the component's onPress() method when the user clicks a hero's name.
+              </pre>
+            </li>
+            <li>Two-way data binding is an important fourth form that combines property and event binding in a single notation. Here's an example from the HeroDetailComponent template that uses two-way data binding with the ngModel directive:
+            <pre>input [(ngModel)]="hero.name" </pre>
+            In two-way binding, a data property value flows to the input box from the component as with property binding. The user's changes also flow back to the component, resetting the property to the latest value, as with event binding.
+            </li>
+          </ol>
+      </div>
+    </div>
+   <p>Angular processes all data bindings once per JavaScript event cycle, from the root of the application component tree through all child components.      
+      Data binding plays an important role in communication between a template and its component, and is also important for communication between parent and child components.
+  </p>
+</div>
+<div class="form-group">
+  <input [(ngModel)]="username" type="text" class="form-control" placeholder="username">
+  <button class="btn btn-default" (click)=onPress() [disabled]="notEmpty()">Clear</button>
+  <p>{{username}}</p>
+</div>
+
