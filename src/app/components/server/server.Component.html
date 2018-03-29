@@ -1,7 +1,24 @@
-<hr>
+<h2>Components</h2>
 <div class="row">
+<p>
+    A component controls a patch of screen called a view.You define a component's application logic—what it does to support the view—inside a class. The class interacts with the view through an API of properties and methods.
+    The @Component decorator identifies the class immediately below it as a component class, and specifies its metadata. In the example code below, you can see that HeroListComponent is just a class, with no special Angular notation or syntax at all. It's not a component until mark it as one with the @Component decorator.
+    The metadata for a component tells Angular where to get the major building blocks it needs to create and present the component and its view. In particular, it associates a template with the component, either directly with inline code, or by reference. Together, the component and its template describe a view.
+    In addition to containing or pointing to the template, the @Component metadata configures, for example, how the component can be referenced in HTML and what services it requires.
+</p>    
+
+<h3>Here's an example of basic metadata for HeroListComponent:</h3>
+<pre><img src="./assets/components.png"></pre>
+
+
     <div class="col col-xs-12">
-        <p >{{serverName}} is {{serverId}}  = {{name()}}</p>
-        <hr>
+        <p >Server Component: {{serverName}} is {{serverId}}  = {{name()}}</p>
+    </div>
+    <div class="col col-xs-12">
+        Alert Components: 
+    </div>
+    <div class=".row">
+        <div class="col-sm-4"><app-successalert></app-successalert></div>
+        <div class="col-sm-4"><app-warning></app-warning></div>  
     </div>
 </div>

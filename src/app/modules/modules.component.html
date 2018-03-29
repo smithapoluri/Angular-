@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+
+
+ Angular apps are modular and angular has its own modularity system called ngmodules. 
+  An ngmodule is a container for cohesive block of code dedicated to an application domain, a workflow, or a 
+  closely related set of capabilities. It can contain components, service providers and other code files whose
+  scope is defined by the the containing ngmodule. A module can import functionality exported from other modules and it can 
+  export some functionality for use by other ngmodules.
+
+  An Ngmodule is defined as a class decorated with @NgModule
+
+  The @NgModule decorator is a function that takes a single metadata object, whose properties describe the module. The most important properties are as follows.
+<ol>
+  <li>
+  declarations—The components, directives, and pipes that belong to this NgModule.
+  </li>
+  <li>
+  exports—The subset of declarations that should be visible and usable in the component templates of other NgModules.
+  </li>
+  <li>
+  imports—Other modules whose exported classes are needed by component templates declared in this NgModule.
+  </li>
+  <li>
+  providers—Creators of services that this NgModule contributes to the global collection of services; they become accessible in all parts of the app. (You can also specify providers at the component level, which is often preferred.)
+  </li>
+  <li>
+  bootstrap—The main application view, called the root component, which hosts all other app views. Only the root NgModule should set this bootstrap property.
+  </li>
+</ol>
+
+<h4>Here's a simple root NgModule definition:</h4>
+
+<pre>
+ <img src="./assets/modules.png">
+</pre>
+
+</div>
+</div>
