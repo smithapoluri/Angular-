@@ -1,0 +1,20 @@
+<p>
+What are directives:
+
+directives are instructions in the DOM
+ex: appturngreen directive is a custom direcive which renders greem tezxt
+</p>
+
+<button class="btn btn-default" (click)=onToggleDisplay()>Display details</button>
+
+<p *ngIf="showContent; else noShow"> "Another fundamental part of creating programs in JavaScript for webpages and servers alike is working with textual data. As in other languages, we use the type string to refer to these textual datatypes. 
+    Just like JavaScript, TypeScript also uses double quotes (") or single quotes (') to surround string data."  </p>
+   <ng-template #noShow> </ng-template>
+  <ul>
+    <li *ngFor="let x of log; let counter = index" 
+    [ngStyle]="{backgroundColor: counter >=5 ? 'blue' : 'white'}"
+    [ngClass]="{'white-text': counter >=5}">
+      {{x}}
+    </li>
+  </ul>
+

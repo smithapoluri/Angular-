@@ -9,8 +9,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SuccessAlertComponent } from './components/successalert/successalert.component';
 import { WarningAlertComponent } from './components/warningAlert/warningAlert.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { DirectivesComponent } from './directives/directives.component';
 import { ModulesComponent } from './modules/modules.component';
+import { EventHighlighterDirective } from './directives/event-highlighter.directive';
+import { DirectivesmoduleComponent } from './directives-module/directives-module.component';
+
 
 @NgModule({
   declarations: [
@@ -21,8 +23,9 @@ import { ModulesComponent } from './modules/modules.component';
     SuccessAlertComponent,
     WarningAlertComponent,
     DataBindingComponent,
-    DirectivesComponent,
-    ModulesComponent  
+    ModulesComponent,
+    EventHighlighterDirective,
+    DirectivesmoduleComponent    
   ],
   imports: [
     BrowserModule, 
